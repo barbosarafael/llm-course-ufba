@@ -2,7 +2,7 @@ import os
 from langchain_community.llms import HuggingFaceEndpoint
 import time
 
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = 'XXXXXXXXXXXXXXX'
 
 model = HuggingFaceEndpoint(
     repo_id = 'meta-llama/Meta-Llama-3-8B-Instruct',
