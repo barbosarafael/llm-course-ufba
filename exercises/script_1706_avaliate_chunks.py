@@ -8,7 +8,7 @@ load_dotenv()
 
 # 1) Carrega o pickle dos chunks como lista
 
-with open('chunks_wikipedia_brasil.pkl', 'rb') as f:
+with open('chunks-pkl/chunks_wikipedia_brasil.pkl', 'rb') as f:
     chunks_to_save = pickle.load(f)
     
 # 2) Define o modelo para embeddings

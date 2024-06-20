@@ -11,7 +11,7 @@ load_dotenv()
 
 # 1) Carrega o pickle dos chunks como lista
 
-with open('chunks_wikipedia_brasil.pkl', 'rb') as f:
+with open('chunks-pkl/chunks_wikipedia_brasil.pkl', 'rb') as f:
     chunks_to_save = pickle.load(f)
     
 # 2) Define o modelo de rerank
@@ -110,7 +110,7 @@ def prompt_llm(user_query, chunks):
 
 response = prompt_llm(user_query, best_chunks[:10])
 
-print(f'>>>>>>>>>>>>>>>> Query: {user_query}\n')
+print(f'\n>>>>>>>>>>>>>>>> Query: {user_query}\n')
 
 print(response) 
 
@@ -120,49 +120,3 @@ print(response)
 # Fundado em 1910, o clube tem uma das maiores torcidas do país e conquistou diversos títulos, incluindo o Campeonato Brasileiro,
 # a Copa do Brasil e a Copa Libertadores da América. O Corinthians também é conhecido pela sua fanática torcida,
 # chamada de "Fiel Torcida", que comparece em peso aos jogos e manifesta uma paixão intensa pelo clube.
-
-
-
-
-
-# model = SentenceTransformer("all-MiniLM-L6-v2")    
-# embeddings = model.encode(chunks_to_save)
-
-# user_query = "Qual o número de pessoas no Brasil?" 
-# query = model.encode([user_query])
-
-# case_list = []
-
-# for i in range(len(embeddings)):
-    
-#     similarities = model.similarity(query[0], embeddings[i])
-    
-#     similarities = [similarities.numpy()[0][0]]
-    
-#     chunk_temp = [chunks_to_save[i]]
-
-#     x = dict(zip(chunk_temp, similarities))
-    
-#     case_list.append(x)
-    
-# sorted_data = sorted(case_list, key = lambda x: list(x.values())[0], reverse = True)
-
-# for x in sorted_data[:10]:
-    
-#     print()
-    
-#     print(f'User query: {user_query}')
-#     print(f'Chunk: {list(x.keys())[0]}')
-#     print(f'Similaridade: {list(x.values())[0]}')
-    
-#     print()
-#     print()
-
-
-# TO-DO:
-
-# Salvar os chunks no ChromaDB
-# Avaliar a similaridade padrão com um loop for a sua query/prompt
-# Utilizar o script rerank 
-# Avaliar os chunks
-# Enviar os principais chunks para o LLM
