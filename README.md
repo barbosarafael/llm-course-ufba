@@ -50,11 +50,11 @@ python exercises/script_1706_save_chunks.py
 
 ### Avaliando a similaridade dos chunks
 
-![Alt Text](gif_file1.gif)
+![Alt Text](gif-file1.gif)
 
 ### Avaliando a similaridade dos chunks como Rerank
 
-![Alt Text](gif_file2.gif)
+![Alt Text](gif-file2.gif)
 
 ## Contato
 
