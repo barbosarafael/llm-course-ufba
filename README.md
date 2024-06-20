@@ -16,9 +16,9 @@ Notas, códigos e recursos do curso "Criando aplicações baseadas em LLMs". O c
 ├── exercises # Exercícios em .py ou .txt enviados no final de cada aula (eu faltei alguma, não lembro o dia)
 
 ├── leetcode-master # repositório baixado para um dos exercícios
-│   ├── cpp # Arquivos em extensão .cpp
-│   ├── java # Arquivos em extensão .java
-│   ├── python # Arquivos em extensão .python
+   ├── cpp # Arquivos em extensão .cpp
+   ├── java # Arquivos em extensão .java
+   ├── python # Arquivos em extensão .python
 
 ├── notes # Anotações das aulas
 
