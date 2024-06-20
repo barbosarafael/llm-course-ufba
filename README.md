@@ -28,3 +28,4 @@ Contém notas, códigos e recursos do curso "Criando aplicações baseadas em LL
 ## Contato
 
 Se deseja tirar dúvida sobre algo, pode mandar mensagem no [LinkedIn](https://www.linkedin.com/in/rafael-barbosa0) ou [Twitter](https://x.com/rafaelbarbosa_s)
+
