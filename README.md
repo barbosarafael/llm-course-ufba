@@ -46,6 +46,16 @@ Utilizando como exemplo um dos script do último exercício realizado.
 python exercises/script_1706_save_chunks.py
 ```
 
+## Exemplo
+
+### Avaliando a similaridade dos chunks
+
+![Alt Text](gif_file1.gif)
+
+### Avaliando a similaridade dos chunks como Rerank
+
+![Alt Text](gif_file2.gif)
+
 ## Contato
 
 Se deseja tirar dúvida sobre algo, pode mandar mensagem no [LinkedIn](https://www.linkedin.com/in/rafael-barbosa0) ou [Twitter](https://x.com/rafaelbarbosa_s)
