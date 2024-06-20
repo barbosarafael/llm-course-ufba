@@ -2,30 +2,48 @@
 
 ## Sobre
 
-Contém notas, códigos e recursos do curso "Criando aplicações baseadas em LLMs". O curso foca no desenvolvimento de aplicações utilizando Modelos de Linguagem de Grande Escala (LLMs).
+Notas, códigos e recursos do curso "Criando aplicações baseadas em LLMs". O curso foca no desenvolvimento de aplicações utilizando Modelos de Linguagem de Grande Escala (LLMs).
+
+> **Observação**: Como são notas de aulas, fui adicionando as anotações não me preocupando com estrutura de arquivos. Agora no fim do curso que estruturei os arquivos de uma forma que faz sentido. Logo, quando você replicar esse código, talvez tenha algo quebrado.
 
 ## Estrutura do Projeto
 
-- **aula1.md**: Notas e conteúdos abordados na primeira aula.
-- **aula02.md**: Notas e conteúdos abordados na segunda aula.
-- **aula04.md**: Notas e conteúdos abordados na quarta aula.
-- **cdd_chat.py**: Exemplo de implementação de um chatbot.
-- **hello_chat.py**: Script básico de um chatbot.
-- **hf.py**: Exemplos de uso da biblioteca Hugging Face.
-- **hf2.py**: Mais exemplos com a Hugging Face.
-- **result-10-06.py**: Resposta do exercício de 10/06.
-- **result-10-06.txt**: Resposta do exercício de 10/06.
-- **result-14-06.txt**: Resposta do exercício de 14/06.
-- **result1406.py**: Resposta do exercício de 14/06.
-- **image.png**: Imagem utilizada no projeto.
 
-## Pré-requisitos (WIP)
+```
+.
+├── chunks-pks # Arquivos .pkl com as listas de chunks criadas durante o curso
 
-## Instalação (WIP)
+├── exercises # Exercícios em .py ou .txt enviados no final de cada aula (eu faltei alguma, não lembro o dia)
 
-## Uso (WIP)
+├── leetcode-master # repositório baixado para um dos exercícios
+│   ├── cpp # Arquivos em extensão .cpp
+│   ├── java # Arquivos em extensão .java
+│   ├── python # Arquivos em extensão .python
+
+├── notes # Anotações das aulas
+
+├── notes_py # Anotações dos scripts das aulas
+
+```
+
+## Pré-requisitos 
+
+- Python 3.10.12
+- Bibliotecas instaladas. Utilize um `pip install -r requirements.txt`
+
+## Como executar os scripts
+
+Utilizando como exemplo um dos script do último exercício realizado. 
+
+- Carrega textos de N (parâmetro) páginas de um determinado assunto (parâmetro) na Wikipedia
+- Faz um pré-processamento do texto
+- Cria os chunks
+- Salva os chunks em um arquivo `.pkl`
+
+```
+python exercises/script_1706_save_chunks.py
+```
 
 ## Contato
 
 Se deseja tirar dúvida sobre algo, pode mandar mensagem no [LinkedIn](https://www.linkedin.com/in/rafael-barbosa0) ou [Twitter](https://x.com/rafaelbarbosa_s)
-
